@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sri Venkateswara Borewells</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Form validation styling */
+        .form-message {
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .form-message.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .form-message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        /* Form group styling */
+        .form-group {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-tint"></i>
+                <span>Sri Venkateswara Borewells</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link" data-translate="nav-home">Home</a>
+                <a href="index.html#services" class="nav-link" data-translate="nav-services">Services</a>
+                <a href="about.html" class="nav-link" data-translate="nav-about">About Us</a>
+                <a href="contact.html" class="nav-link active" data-translate="nav-contact">Contact</a>
+                <div class="language-selector">
+                    <button class="language-btn" id="languageBtn">
+                        <i class="fas fa-globe"></i>
+                        <span id="currentLang">EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <div class="language-option" data-lang="en">
+                            <span class="lang-flag">🇺🇸</span>
+                            <span>English</span>
+                        </div>
+                        <div class="language-option" data-lang="te">
+                            <span class="lang-flag">🇮🇳</span>
+                            <span>తెలుగు</span>
+                        </div>
+                        <div class="language-option" data-lang="hi">
+                            <span class="lang-flag">🇮🇳</span>
+                            <span>हिंदी</span>
+                        </div>
+                        <div class="language-option" data-lang="od">
+                            <span class="lang-flag">🇮🇳</span>
+                            <span>ଓଡ଼ିଆ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-translate="contact-title">Contact Us</h1>
+            <p data-translate="contact-subtitle">Get in touch for professional borewell services and expert consultation</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 data-translate="contact-get-in-touch">Get in Touch</h2>
+                    <p data-translate="contact-intro">We're here to help with all your borewell needs. Contact us today for professional service and expert advice.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3 data-translate="contact-call-us">Call Us</h3>
+                                <p>+91 9440515491</p>
+                                <p>+91 7036585101</p>
+                                <small data-translate="contact-available">Available 24/7 for emergencies</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3 data-translate="contact-email-us">Email Us</h3>
+                                <p>srivenkateswaraborewells.satish@gmail.com</p>
+                                <small data-translate="contact-response-time">We'll respond within 2 hours</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3 data-translate="contact-visit-us">Visit Us</h3>
+                                <p>Ayyappa Swamy Temple Road, Sompeta</p>
+                                <p>Srikakulam, Andhra Pradesh - 532284</p>
+                                <small data-translate="contact-office-hours">Open: Mon-Sat 9 AM - 6 PM</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3 data-translate="contact-working-hours">Working Hours</h3>
+                                <p data-translate="contact-weekdays">Monday - Friday: 8 AM - 7 PM</p>
+                                <p data-translate="contact-saturday">Saturday: 9 AM - 5 PM</p>
+                                <p data-translate="contact-sunday">Sunday: Emergency Services Only</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2 data-translate="contact-form-title">Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-translate="form-name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" data-translate="form-email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" data-translate="form-phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service" data-translate="form-service">Service Required</label>
+                            <select id="service" name="service">
+                                <option value="" data-translate="form-select-service">Select a service</option>
+                                <option value="borewell-drilling" data-translate="form-service-drilling">Borewell Drilling</option>
+                                <option value="pump-installation" data-translate="form-service-pump">Pump Installation</option>
+                                <option value="maintenance" data-translate="form-service-maintenance">Maintenance & Repair</option>
+                                <option value="consultation" data-translate="form-service-consultation">Consultation</option>
+                                <option value="other" data-translate="form-service-other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="location" data-translate="form-location">Location</label>
+                                <input type="text" id="location" name="location" data-translate="form-location-placeholder" placeholder="City, Area">
+                            </div>
+                            <div class="form-group">
+                                <label for="urgency" data-translate="form-urgency">Urgency Level</label>
+                                <select id="urgency" name="urgency">
+                                    <option value="normal" data-translate="form-urgency-normal">Normal</option>
+                                    <option value="urgent" data-translate="form-urgency-urgent">Urgent</option>
+                                    <option value="emergency" data-translate="form-urgency-emergency">Emergency</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-translate="form-message">Message *</label>
+                            <textarea id="message" name="message" rows="5" data-translate="form-message-placeholder" placeholder="Please describe your requirements in detail..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+                            <span class="btn-text">
+                                <i class="fas fa-paper-plane"></i> <span data-translate="form-send">Send Message</span>
+                            </span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> <span data-translate="form-sending">Sending...</span>
+                            </span>
+                        </button>
+                        <div id="formMessage" class="form-message" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+<section class="service-areas">
+    <div class="container">
+        <div class="section-header">
+            <h2 data-translate="service-areas-title">Our Service Areas</h2>
+            <p data-translate="service-areas-subtitle">We provide professional borewell services across multiple locations</p>
+        </div>
+        <div class="areas-grid">
+            <div class="area-card">
+                <i class="fas fa-city"></i>
+                <p data-translate="urban-services">Professional services across urban zones</p>
+            </div>
+            <div class="area-card">
+                <i class="fas fa-building"></i>
+                <p data-translate="property-drilling">Comprehensive drilling for all types of properties</p>
+            </div>
+            <div class="area-card">
+                <i class="fas fa-home"></i>
+                <p data-translate="residential-solutions">Expert solutions for residential communities</p>
+            </div>
+            <div class="area-card">
+                <i class="fas fa-industry"></i>
+                <p data-translate="industrial-support">Advanced support for industrial and commercial needs</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 data-translate="faq-title">Frequently Asked Questions</h2>
+            <p data-translate="faq-subtitle">Common questions about our borewell services</p>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3 data-translate="faq-depth-question">How deep can you drill a borewell?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-translate="faq-depth-answer">We can drill borewells up to 1000 feet deep...</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3 data-translate="faq-duration-question">How long does it take to complete a borewell?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-translate="faq-duration-answer">Typically, a standard borewell takes 1-3 days...</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3 data-translate="faq-warranty-question">Do you provide warranty on your work?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-translate="faq-warranty-answer">Yes, we provide a comprehensive warranty...</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3 data-translate="faq-cost-question">What is the cost of drilling a borewell?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-translate="faq-cost-answer">The cost depends on various factors...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-tint"></i>
+                        <span data-translate="footer-company-name">Sri Venkateswara Borewells</span>
+                    </div>
+                    <p data-translate="footer-desc">Professional borewell services with expertise and reliability. Your trusted partner for water solutions.</p>
+                    <div class="social-links">
+<a href="javascript:void(0);" title="Coming Soon">
+  <i class="fab fa-facebook"></i>
+</a>
+<a href="https://wa.me/919440515491" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<a href="https://www.instagram.com/sri_venkateswra_borewells_svbs?igsh=bWx0ZmN0MTl6dzF4" target="_blank">
+  <i class="fab fa-instagram"></i>
+</a>
+<a href="javascript:void(0);" title="Coming Soon">
+  <i class="fab fa-linkedin"></i>
+</a>
+
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="footer-quick-links">Quick Links</h3>
+                    <ul>
+                        <li><a href="#home" data-translate="nav-home">Home</a></li>
+                        <li><a href="#services" data-translate="nav-services">Services</a></li>
+                        <li><a href="about.html" data-translate="nav-about">About Us</a></li>
+                        <li><a href="contact.html" data-translate="nav-contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="footer-services">Services</h3>
+                    <ul>
+                        <li><a href="#services" data-translate="service-drilling-title">Borewell Drilling</a></li>
+                        <li><a href="#services" data-translate="service-pump-title">Pump Installation</a></li>
+                        <li><a href="#services" data-translate="service-maintenance-title">Maintenance</a></li>
+                        <li><a href="#services" data-translate="service-maintenance-feature2">Repair Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="footer-contact-info">Contact Info</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9440515491</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>srivenkateswaraborewells.satish@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+
+                        <i class="fas fa-map-marker-alt"></i>
+                        <a href="https://www.google.com/maps/place/Sri+Venkateswara+Borewells+sompeta/@18.9590402,84.5809662,17z/data=!3m1!4b1!4m6!3m5!1s0x3a3d130047157a57:0x83e39ab116744a1c!8m2!3d18.9590402!4d84.5809662!16s%2Fg%2F11vsszpcgz?entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: inherit; text-decoration: none;">
+                            <span>Sompeta, Andhra Pradesh, India</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer-rights">&copy; 2025 Sri Venkateswara Borewells. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script>
+// Google Apps Script Web App URL
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzkr2OeAJfFJL9Wen0cHwf2TjwuzUEZYflccPUI5SYB7FBp7KxQ02MD6afNwOrUIBVCZA/exec'
+// Contact form submission handler
+document.getElementById("contactForm").addEventListener("submit", async function(event) {
+  event.preventDefault();
+
+  // Get form elements
+  const form = event.target;
+  const status = document.getElementById("formMessage");
+  const submitBtn = document.getElementById("submitBtn");
+  const btnText = submitBtn.querySelector(".btn-text");
+  const btnLoading = submitBtn.querySelector(".btn-loading");
+
+  // Show loading state
+  btnText.style.display = "none";
+  btnLoading.style.display = "inline-flex";
+  submitBtn.disabled = true;
+  status.style.display = "none";
+
+  try {
+    // Create form data as URLSearchParams for better compatibility
+    const formData = new FormData(form);
+    const urlParams = new URLSearchParams();
+    
+    // Convert FormData to URLSearchParams
+    for (let [key, value] of formData.entries()) {
+      urlParams.append(key, value);
+    }
+
+    console.log('Submitting to:', scriptURL);
+    console.log('Form data:', Object.fromEntries(urlParams.entries()));
+
+    // Submit form data to Google Apps Script with proper headers
+    const response = await fetch(scriptURL, {
+      method: 'POST',
+      mode: 'cors',
+      cache: 'no-cache',
+      credentials: 'omit',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      redirect: 'follow',
+      body: urlParams.toString()
+    });
+
+    console.log('Response status:', response.status);
+    console.log('Response headers:', response.headers);
+
+    // Check if response is ok
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const result = await response.json();
+    console.log('Response data:', result);
+
+    if (result.result === "success") {
+      // Show success message
+      status.className = "form-message success";
+      status.textContent = "✅ Thank you! Your message has been sent successfully. We will contact you soon.";
+      status.style.display = "block";
+      form.reset(); // Clear the form
+    } else {
+      // Show error message
+      status.className = "form-message error";
+      status.textContent = "❌ Error: " + (result.message || "Something went wrong. Please try again.");
+      status.style.display = "block";
+    }
+
+  } catch (error) {
+    console.error('Fetch error:', error);
+    
+    // Show network error message with more specific details
+    status.className = "form-message error";
+    
+    if (error.name === 'TypeError' && error.message.includes('Failed to fetch')) {
+      status.textContent = "❌ Connection error: Please check if your Google Apps Script is deployed correctly and has proper permissions. Error: " + error.message;
+    } else {
+      status.textContent = "❌ Error: " + error.message;
+    }
+    
+    status.style.display = "block";
+  } finally {
+    // Reset button state
+    btnText.style.display = "inline-flex";
+    btnLoading.style.display = "none";
+    submitBtn.disabled = false;
+    
+    // Auto-hide message after 10 seconds (longer for debugging)
+    setTimeout(() => {
+      status.style.display = "none";
+    }, 10000);
+  }
+});
+</script>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

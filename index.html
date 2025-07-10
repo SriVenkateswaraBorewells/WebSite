@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Venkateswara Borewells - Professional Borewell Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-tint"></i>
+                <span>Sri Venkateswara Borewells</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link" data-translate="nav-home">Home</a>
+                <a href="#services" class="nav-link" data-translate="nav-services">Services</a>
+                <a href="about.html" class="nav-link" data-translate="nav-about">About Us</a>
+                <a href="contact.html" class="nav-link" data-translate="nav-contact">Contact</a>
+                <div class="language-selector">
+                    <button class="language-btn" id="languageBtn">
+                        <i class="fas fa-globe"></i>
+                        <span id="currentLang">EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <div class="language-option" data-lang="en">
+                            <span class="lang-flag">🇺🇸</span>
+                            <span>English</span>
+                        </div>
+                        <div class="language-option" data-lang="te">
+                            <span class="lang-flag">🇮🇳</span>
+                            <span>తెలుగు</span>
+                        </div>
+                        <div class="language-option" data-lang="hi">
+                            <span class="lang-flag">🇮🇳</span>
+                            <span>हिंदी</span>
+                        </div>
+                        <div class="language-option" data-lang="od">
+                            <span class="lang-flag">🇮🇳</span>
+                            <span>ଓଡ଼ିଆ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div>
+                <h1 data-translate="hero-title">Professional Borewell Services</h1>
+                <p data-translate="hero-subtitle">Reliable water solutions for your home and business needs across India</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary" data-translate="hero-services-btn">Our Services</a>
+                    <a href="contact.html" class="btn btn-secondary" data-translate="hero-quote-btn">Get Quote</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-card">
+                    <i class="fas fa-water"></i>
+                    <h3 data-translate="hero-card-title">Expert Drilling</h3>
+                    <p data-translate="hero-card-desc">Professional borewell drilling with modern equipment and skilled technicians</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="services-title">Our Services</h2>
+                <p data-translate="services-subtitle">Complete water solution services for all your needs</p>
+            </div>
+            <div class="services-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Service Slide 1 - pic6 -->
+                        <div class="service-slide active">
+                            <div class="service-content">
+                                <div class="service-image">
+                                    <img src="pic6.jpg" alt="Old Borewell Solutions">
+                                </div>
+                                <div class="service-info">
+                                    <div class="service-icon">
+                                        <i class="fas fa-wrench"></i>
+                                    </div>
+                                    <h3 data-translate="service-old-borewell-title">Old Borewell Solutions</h3>
+                                    <p data-translate="service-old-borewell-desc">Expert solutions to restore and revitalize your old borewells for optimal performance</p>
+                                    <ul>
+                                        <li data-translate="service-old-borewell-feature1">Borewell cleaning</li>
+                                        <li data-translate="service-old-borewell-feature2">Yield improvement</li>
+                                        <li data-translate="service-old-borewell-feature3">Pump replacement</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Service Slide 2 - pic1 -->
+                        <div class="service-slide">
+                            <div class="service-content">
+                                <div class="service-image">
+                                    <img src="pic1.jpg" alt="Borewell Drilling">
+                                </div>
+                                <div class="service-info">
+                                    <div class="service-icon">
+                                        <i class="fas fa-tint"></i>
+                                    </div>
+                                    <h3 data-translate="service-drilling-title">Borewell Drilling</h3>
+                                    <p data-translate="service-drilling-desc">Professional drilling services with modern equipment and experienced technicians</p>
+                                    <ul>
+                                        <li data-translate="service-drilling-feature1">Deep bore drilling</li>
+                                        <li data-translate="service-drilling-feature2">Shallow well drilling</li>
+                                        <li data-translate="service-drilling-feature3">Site survey & assessment</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Service Slide 3 - pic4 -->
+                        <div class="service-slide">
+                            <div class="service-content">
+                                <div class="service-image">
+                                    <img src="pic4.jpg" alt="Maintenance & Repair">
+                                </div>
+                                <div class="service-info">
+                                    <div class="service-icon">
+                                        <i class="fas fa-tools"></i>
+                                    </div>
+                                    <h3 data-translate="service-maintenance-title">Maintenance & Repair</h3>
+                                    <p data-translate="service-maintenance-desc">Comprehensive maintenance and repair services to keep your system running</p>
+                                    <ul>
+                                        <li data-translate="service-maintenance-feature1">System diagnostics</li>
+                                        <li data-translate="service-maintenance-feature2">Repair services</li>
+                                        <li data-translate="service-maintenance-feature3">Regular maintenance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Service Slide 4 - pic2 -->
+                        <div class="service-slide">
+                            <div class="service-content">
+                                <div class="service-image">
+                                    <img src="pic5.jpg" alt="Pump Installation">
+                                </div>
+                                <div class="service-info">
+                                    <div class="service-icon">
+                                        <i class="fas fa-cog"></i>
+                                    </div>
+                                    <h3 data-translate="service-pump-title">Pump Installation</h3>
+                                    <p data-translate="service-pump-desc">Expert pump installation and maintenance services for optimal water flow</p>
+                                    <ul>
+                                        <li data-translate="service-pump-feature1">Submersible pumps</li>
+                                        <li data-translate="service-pump-feature2">Centrifugal pumps</li>
+                                        <li data-translate="service-pump-feature3">Pump maintenance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Service Slide 5 - pic5 -->
+                        <div class="service-slide">
+                            <div class="service-content">
+                                <div class="service-image">
+                                    <img src="pic2.jpg" alt="Water Quality Testing">
+                                </div>
+                                <div class="service-info">
+                                    <div class="service-icon">
+                                        <i class="fas fa-flask"></i>
+                                    </div>
+                                    <h3 data-translate="service-testing-title">Water Quality Testing</h3>
+                                    <p data-translate="service-testing-desc">Professional water quality testing and analysis services for safe drinking water</p>
+                                    <ul>
+                                        <li data-translate="service-testing-feature1">Chemical analysis</li>
+                                        <li data-translate="service-testing-feature2">pH testing</li>
+                                        <li data-translate="service-testing-feature3">Contamination check</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carousel Dots -->
+                <div class="carousel-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                    <span class="dot" data-slide="4"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="why-choose-title">Why Choose Sri Venkateswara Borewells?</h2>
+                <p data-translate="why-choose-subtitle">Your trusted partner for reliable water solutions</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-award"></i>
+                    <h3 data-translate="feature-experience">20+ Years Experience</h3>
+                    <p data-translate="feature-experience-desc">Decades of expertise in borewell drilling and water solutions</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-tools"></i>
+                    <h3 data-translate="feature-equipment">Modern Equipment</h3>
+                    <p data-translate="feature-equipment-desc">State-of-the-art drilling equipment for efficient service</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-users"></i>
+                    <h3 data-translate="feature-team">Expert Team</h3>
+                    <p data-translate="feature-team-desc">Skilled and experienced professionals committed to quality</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-clock"></i>
+                    <h3 data-translate="feature-support">24/7 Support</h3>
+                    <p data-translate="feature-support-desc">Round-the-clock service and emergency support</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3 data-translate="feature-quality">Quality Assurance</h3>
+                    <p data-translate="feature-quality-desc">Guaranteed quality work with warranty coverage</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-rupee-sign"></i>
+                    <h3 data-translate="feature-pricing">Competitive Pricing</h3>
+                    <p data-translate="feature-pricing-desc">Affordable rates without compromising on quality</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-translate="cta-title">Ready to Get Started?</h2>
+                <p data-translate="cta-subtitle">Contact us today for professional borewell services and expert consultation</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary" data-translate="cta-quote-btn">Get Free Quote</a>
+                    <a href="tel:+919440515491" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i> <span data-translate="cta-call-btn">Call Now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-tint"></i>
+                        <span data-translate="footer-company-name">Sri Venkateswara Borewells</span>
+                    </div>
+                    <p data-translate="footer-desc">Professional borewell services with expertise and reliability. Your trusted partner for water solutions.</p>
+                    <div class="social-links">
+<a href="javascript:void(0);" title="Coming Soon">
+  <i class="fab fa-facebook"></i>
+</a>
+<a href="https://wa.me/919440515491" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<a href="https://www.instagram.com/sri_venkateswra_borewells_svbs?igsh=bWx0ZmN0MTl6dzF4" target="_blank">
+  <i class="fab fa-instagram"></i>
+</a>
+<a href="javascript:void(0);" title="Coming Soon">
+  <i class="fab fa-linkedin"></i>
+</a>
+
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="footer-quick-links">Quick Links</h3>
+                    <ul>
+                        <li><a href="#home" data-translate="nav-home">Home</a></li>
+                        <li><a href="#services" data-translate="nav-services">Services</a></li>
+                        <li><a href="about.html" data-translate="nav-about">About Us</a></li>
+                        <li><a href="contact.html" data-translate="nav-contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="footer-services">Services</h3>
+                    <ul>
+                        <li><a href="#services" data-translate="service-drilling-title">Borewell Drilling</a></li>
+                        <li><a href="#services" data-translate="service-pump-title">Pump Installation</a></li>
+                        <li><a href="#services" data-translate="service-maintenance-title">Maintenance</a></li>
+                        <li><a href="#services" data-translate="service-maintenance-feature2">Repair Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="footer-contact-info">Contact Info</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9440515491</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>srivenkateswaraborewells.satish@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <a href="https://www.google.com/maps/place/Sri+Venkateswara+Borewells+sompeta/@18.9590402,84.5809662,17z/data=!3m1!4b1!4m6!3m5!1s0x3a3d130047157a57:0x83e39ab116744a1c!8m2!3d18.9590402!4d84.5809662!16s%2Fg%2F11vsszpcgz?entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: inherit; text-decoration: none;">
+                            <span>Sompeta, Andhra Pradesh, India</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer-rights">&copy; 2025 Sri Venkateswara Borewells. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
