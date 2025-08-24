@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://srivenkateswaraborewells.github.io/WebSite/sitemap.xml
